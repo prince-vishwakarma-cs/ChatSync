@@ -31,6 +31,8 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
 
+  consolde.log("server url : ",server)
+
   useEffect(() => {
     axios
       .get(`${server}/api/v1/user/me`, { withCredentials: true })
