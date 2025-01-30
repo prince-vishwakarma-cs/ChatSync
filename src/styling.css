@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+:root {
+  --color-blurple: #7289da;
+  --color-not-quite-black: #23272a;
+  --color-dark: #2c2f33;
+  --color-lighter-dark: #45494e;
+  --color-full-white: #ffffff;
+  --color-grey-white: #b9bbbe;
+  --color-grey-dark: #242629;
+  --color-actually-black: #000000;
+  --color-fantastic-green: #00ae7a;
+  --color-background: #131314;
+  --color-selected-bg: #1e1f20;
+  --color-text-on-selected: #bdc1c6;
+  --color-text-secondary: #71767b;
+  --color-border: #2f3336;
+  --color-accent: #0057ff;
+  --color-text-primary: #e7e9ea;
+  --color-hover-bg: #303131;
+
+}
+.squircle {
+  /* background: var(--color-lighter-dark); */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: border-radius 128ms, background 128ms, color 128ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.squircle:hover {
+  border-radius: 36%;
+}
+.squircle:hover::before {
+  transform: translate(-100%, -50%) scale(0.5);
+}
+.squircle:hover .popper-boi {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+.squircle::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--color-full-white);
+  position: absolute;
+  border-radius: 5px;
+  top: 50%;
+  transform: translate(-100%, -50%) scale(0);
+  transition: transform 180ms;
+}
+
+.purple-boi {
+    color: var(--color-blurple);
+
+  }
+.purple-boi:hover {
+  background: var(--color-blurple);
+  color: white;
+}
+
+.normal-boi {
+  color: var(--color-text-on-selected);
+}
+
+.green-boi {
+  color: var(--color-fantastic-green);
+}
+
+.green-boi:hover {
+  background: var(--color-fantastic-green);
+  color: var(--color-full-white);
+}
+
+.divider {
+  width: 100%;
+  background: var(--color-full-white);
+  height: 2px;
+  border-radius: 1px;
+  opacity: 0.06;
+  transform: scale(0.75);
+}
+
+.popper-boi {
+  background: var(--color-actually-black);
+  padding: 0.68rem 1rem;
+  position: absolute;
+  top: 50%;
+  left: 155%;
+  transform-origin: left;
+  transform: translateY(-50%) scale(0.98);
+  width: max-content;
+  max-width: 256px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 64ms, transform 128ms cubic-bezier(0.43, 0.09, 0.38, 2.56);
+  pointer-events: none;
+  color: var(--color-full-white);
+}
+
+.popper-boi::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  background: var(--color-actually-black);
+  width: 24px;
+  height: 24px;
+  z-index: -1;
+}
+
+.server-icon {
+  width: inherit;
+  border-radius: inherit;
+}
+
+.switcher {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--color-grey-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.switcher:hover {
+  background: var(--color-lighter-dark);
+}
+
+.avatar {
+  width: inherit;
+  border-radius: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+}
+
+
+.active-boi {
+  color: var(--color-accent);
+  border-radius: 36%;
+}
+
+.active-boi::before {
+  transform: translate(-100%, -50%) scale(0.5);
+}
+
+
+/* General Button Styling */
+.icon-button-no-bg {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon-button-no-bg:hover {
+  transform: scale(1.1); /* Simple hover effect */
+}
+
+.icon-button-no-bg .icon {
+  width: 2rem; /* Change icon size if needed */
+  height: 2rem;
+}
+
+.icon-button-no-bg .description {
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--text-color); /* Use your preferred text color */
+}
+
+/* Active Button Styling */
+.icon-button-no-bg.active-icon {
+  color: var(--color-accent); /* Active state color */
+}
+
+/* Notification Badge */
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  font-size: 0.75rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+}
+
+.active-icon{
+  color: var(--color-full-white);
+  
+}

@@ -1,0 +1,382 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 2s linear infinite;
+}
+
+.scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Global styles for a minimal modern look */
+html,
+body {
+  background-color: #23272a;
+  color: #333;
+}
+
+*{
+  font-family: "PP Pangram Sans Medium";
+  font-weight: 500;
+}
+button {
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 4px; /* Make the scrollbar narrow */
+  margin: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2); /* A light thumb for minimalistic feel */
+  border-radius: 8px; /* Rounded edges */
+  padding: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Hide the scrollbar track */
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin; /* Make the scrollbar thin */
+  scrollbar-color: rgba(255, 255, 255, 0.116) transparent; /* Color the thumb and hide the track */
+}
+
+.button-green {
+  color: rgb(2, 75, 20);
+  background-color: #c8f9d0;
+  border-color: rgb(187, 236, 196);
+  border-radius: 9999px;
+  border-width: 2px;
+}
+.button-orange {
+  color: rgb(128, 53, 0);
+  background-color: #ffe5d0;
+  border-color: rgb(241, 208, 173);
+  border-radius: 9999px;
+  border-width: 2px;
+}
+.button-blue {
+  color: #003580;
+  background-color: #d0eaff;
+  border-color: #add7f1;
+  border-radius: 9999px;
+  border-width: 2px;
+}
+
+.button-red {
+  color: rgb(128, 0, 0);
+  background-color: #f9d0d0;
+  border-color: rgb(236, 187, 187);
+  border-radius: 9999px;
+  border-width: 2px;
+}
+
+.button-yellow {
+  color: rgb(102, 75, 0);
+  background-color: #f9f2d0;
+  border-color: rgb(236, 229, 187);
+  border-radius: 9999px;
+  border-width: 2px;
+}
+
+.button-purple {
+  color: rgb(75, 0, 128);
+  background-color: #f2d0f9;
+  border-color: rgb(215, 187, 236);
+  border-radius: 9999px;
+  border-width: 2px;
+}
+
+.button-teal {
+  color: rgb(0, 77, 75);
+  background-color: #d0f9f5;
+  border-color: rgb(187, 236, 228);
+  border-radius: 9999px;
+  border-width: 2px;
+}
+
+.button-pink {
+  color: rgb(128, 0, 128);
+  background-color: #f9d0f2;
+  border-color: rgb(236, 187, 215);
+  border-radius: 9999px;
+  border-width: 2px;
+}
+
+.button-gray {
+  color: rgb(45, 45, 45);
+  background-color: #f0f0f0;
+  border-color: rgb(200, 200, 200);
+  border-radius: 9999px;
+  border-width: 2px;
+}
+
+.button-brown {
+  color: rgb(75, 53, 28);
+  background-color: #d0bfa0;
+  border-color: rgb(215, 187, 149);
+  border-radius: 9999px;
+  border-width: 2px;
+}
+
+.button-indigo {
+  color: rgb(25, 25, 112);
+  background-color: #d0d8f9;
+  border-color: rgb(187, 199, 236);
+  border-radius: 9999px;
+  border-width: 2px;
+}
+
+.button-lime {
+  color: rgb(77, 128, 0);
+  background-color: #e5f9d0;
+  border-color: rgb(202, 236, 187);
+  border-radius: 9999px;
+  border-width: 2px;
+}
+
+.border-color {
+  border-color: #e6e6e8;
+}
+
+.popup-container {
+  background-color: rgb(252, 251, 250);
+  border-color: white;
+}
+
+.button-green:hover {
+  background-color: #b0f0c0;
+  border-color: rgb(160, 220, 185);
+}
+
+.button-blue:hover {
+  background-color: #c0dbff;
+  border-color: rgb(153, 195, 231);
+}
+
+.button-red:hover {
+  background-color: #f9b0b0;
+  border-color: rgb(216, 167, 167);
+}
+
+.button-yellow:hover {
+  background-color: #f9eab0;
+  border-color: rgb(216, 209, 167);
+}
+
+.button-purple:hover {
+  background-color: #eab0f9;
+  border-color: rgb(195, 167, 216);
+}
+
+.button-orange:hover {
+  background-color: #ffd0b0;
+  border-color: rgb(231, 188, 153);
+}
+
+.button-teal:hover {
+  background-color: #b0f0e5;
+  border-color: rgb(160, 220, 205);
+}
+
+.button-pink:hover {
+  background-color: #f9b0de;
+  border-color: rgb(216, 153, 195);
+}
+
+.button-gray:hover {
+  background-color: #e0e0e0;
+  border-color: rgb(180, 180, 180);
+}
+
+.button-brown:hover {
+  background-color: #c0a780;
+  border-color: rgb(195, 167, 129);
+}
+
+.button-indigo:hover {
+  background-color: #b0c8f9;
+  border-color: rgb(167, 177, 216);
+}
+
+.button-lime:hover {
+  background-color: #d0f0a0;
+  border-color: rgb(172, 216, 147);
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: #f7f7f7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.file-menu {
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+  width: 12rem;
+}
+
+.file-menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.file-menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.file-menu-item svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.file-menu-item span {
+  font-size: 14px;
+}
+
+.translucent{
+  
+background-color: color-mix(in srgb, var(--color-white, #fff) 5%, transparent)
+}
+
+input:focus {
+  outline: none; /* Removes the focus outline */
+  box-shadow: none; /* Removes any box-shadow on focus */
+}
+.typing-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px 0 0;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: blink 1.4s infinite both;
+
+    &:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
