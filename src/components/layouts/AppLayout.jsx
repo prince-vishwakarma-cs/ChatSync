@@ -73,7 +73,7 @@ const AppLayout = () => (WrappedComponent) => {
             <Drawer
               open={isMobile}
               onClose={handleMobileClose}
-              sx={{ height: "100vh", scrollbar: "none" }}
+              sx={{ height: "100dvh", scrollbar: "none" }}
             >
               <ChatList
                 chats={data?.chats}

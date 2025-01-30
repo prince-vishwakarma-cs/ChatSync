@@ -44,7 +44,7 @@ const NotificationsPage = () => {
     <div  className="flex flex-col h-screen bg-not-so-dark">
     <div className="flex flex-1 grow">
       <SidePanel />
-      <div className="flex items-center p-2 justify-center flex-grow h-[calc(100vh-4rem)] sm:h-screen rounded-tr-none rounded-br-none bg-not-so-dark sm:rounded-2xl">
+      <div className="flex items-center p-2 justify-center flex-grow h-[calc(100dvh-4rem)] sm:h-screen rounded-tr-none rounded-br-none bg-not-so-dark sm:rounded-2xl">
         <div className="w-full max-w-md p-6 overflow-hidden shadow-lg rounded-3xl bg-selected-bg">
           <h2 className="text-lg font-semibold text-gray-100">Notifications</h2>
 

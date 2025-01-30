@@ -45,7 +45,7 @@ const SearchPage = () => {
     <div className="flex flex-col h-screen bg-not-quite-black">
       <div className="flex flex-1 flex-grow ">
         <SidePanel />
-        <div className="flex flex-col flex-grow p-6 bg-not-so-dark  h-[calc(100vh-4rem)] sm:h-screen">
+        <div className="flex flex-col flex-grow p-6 bg-not-so-dark  h-[calc(100dvh-4rem)] sm:h-screen">
           <div className="relative mb-4">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <Search className="text-text-secondary" />

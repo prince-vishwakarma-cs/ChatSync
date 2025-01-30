@@ -83,7 +83,7 @@ const ChatsManagement = () => {
     <AdminLayout>
       <Box
         sx={{
-          height: "100vh", // Full viewport height for the container
+          height: "100dvh", // Full viewport height for the container
           display: "flex",
           flexDirection: "column",
           padding: 3,

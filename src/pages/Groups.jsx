@@ -114,13 +114,13 @@ const Groups = () => {
   };
   return (
     <div className="flex flex-col w-screen h-screen bg-not-quite-black text-text-primary">
-      <div className="flex bg-not-quite-black text-text-primary  h-[calc(100vh-4rem)] sm:h-screen">
+      <div className="flex bg-not-quite-black text-text-primary  h-[calc(100dvh-4rem)] sm:h-screen">
       <SidePanel />
-      <div className="flex  h-[calc(100vh-4rem)] sm:h-screen flex-grow">
+      <div className="flex  h-[calc(100dvh-4rem)] sm:h-screen flex-grow">
         <aside className="hidden w-1/3 border-r sm:block bg-not-so-dark border-light-gray-divider">
           <GroupsList myGroups={myGroups?.data?.message} />
         </aside>
-        <main className="relative flex-1 w-2/3 p-6 bg-not-so-dark h-[calc(100vh-4rem)] sm:h-screen">
+        <main className="relative flex-1 w-2/3 p-6 bg-not-so-dark h-[calc(100dvh-4rem)] sm:h-screen">
           <div className="absolute top-4 left-4">
             <button
               className="p-2 rounded-md sm:hidden focus:outline-none"
@@ -235,10 +235,10 @@ const Groups = () => {
               <Transition.Child>
                 <div className="fixed inset-0 transition-opacity bg-white bg-opacity-5" />
               </Transition.Child>
-              <div className="fixed inset-0 z-10 flex h-[calc(100vh-4rem)] sm:max-h-screen">
+              <div className="fixed inset-0 z-10 flex h-[calc(100dvh-4rem)] sm:max-h-screen">
                 <div className="flex items-center justify-start min-h-full text-center sm:items-center sm:p-0">
                   <Transition.Child>
-                    <Dialog.Panel className="relative px-4 pt-5 pb-4 w-64 overflow-hidden text-left transition-all transform bg-not-so-dark h-[calc(100vh-4rem)] sm:max-h-screen shadow-xl sm:my-8 sm:w-full sm:p-6">
+                    <Dialog.Panel className="relative px-4 pt-5 pb-4 w-64 overflow-hidden text-left transition-all transform bg-not-so-dark h-[calc(100dvh-4rem)] sm:max-h-screen shadow-xl sm:my-8 sm:w-full sm:p-6">
                       <GroupsList myGroups={myGroups?.data?.message} />
                     </Dialog.Panel>
                   </Transition.Child>

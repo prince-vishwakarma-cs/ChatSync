@@ -4,7 +4,7 @@ import BottomBar from "../layouts/BottomBar"; // If you have a bottom bar
 
 const MainLayout = () => {
   return (
-    <div className="flex w-screen h-[100vh]">
+    <div className="flex w-screen h-[100dvh]">
       {/* Side Panel */}
       <SidePanel className="w-[5rem] flex-shrink-0" />
 

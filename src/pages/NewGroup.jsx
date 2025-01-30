@@ -43,7 +43,7 @@ const NewGroupPage = () => {
     <div className="flex flex-col h-screen bg-not-quite-black">
       <div className="flex w-screen">
         <SidePanel />
-        <div className="flex flex-col items-center justify-center flex-grow px-4 py-8  h-[calc(100vh-4rem)] sm:h-screen  bg-not-so-dark ">
+        <div className="flex flex-col items-center justify-center flex-grow px-4 py-8  h-[calc(100dvh-4rem)] sm:h-screen  bg-not-so-dark ">
           <div className="w-full max-w-xl">
             <h3 className="mb-6 text-xl font-medium text-center text-text-primary">
               Create a New Group

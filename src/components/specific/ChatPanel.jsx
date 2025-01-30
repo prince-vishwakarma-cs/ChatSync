@@ -17,7 +17,7 @@ export const ChatPanel = ({
   handleDeleteChat,
 }) => {
   return (
-    <ul className="box-border z-40 flex flex-col gap-4 p-4 bg-not-quite-black sm:hidden h-[calc(100vh-4rem)] overflow-y-auto overflow-x-hidden">
+    <ul className="box-border z-40 flex flex-col gap-4 p-4 bg-not-quite-black sm:hidden h-[calc(100dvh-4rem)] overflow-y-auto overflow-x-hidden">
       {chats?.map((data, index) => {
         const { avatar, name, _id, groupChat, members } = data;
         const newMessageAlert = newMessagesAlert.find(

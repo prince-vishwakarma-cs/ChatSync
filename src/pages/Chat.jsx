@@ -170,7 +170,7 @@ const Chat = ({ user }) => {
   return chatDetails.isLoading ? (
     <>Loading...</>
   ) : (
-    <div className="flex flex-col h-[calc(100vh-4rem)] overflow-hidden bg-not-so-dark sm:h-screen">
+    <div className="flex flex-col h-[calc(100dvh-4rem)] overflow-hidden bg-not-so-dark sm:h-screen">
       <div className="flex-none">
         <ChatHeader chatDetails={chatDetails} chatId={chatId} />
       </div>

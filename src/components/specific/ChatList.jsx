@@ -17,7 +17,7 @@ const ChatList = ({
   return (
     <div className=" h-[100dvh] bg-not-so-dark border-r border-light-gray-divider">
     <MessagesHeader/>
-    <div className="flex flex-col h-[calc(100vh-5rem)] w-full overflow-y-auto">
+    <div className="flex flex-col h-[calc(100dvh-5rem)] w-full overflow-y-auto">
       {chats?.map((data, index) => {
         const { avatar, name, _id, groupChat, members } = data; 
         const newMessageAlert = newMessagesAlert.find(
