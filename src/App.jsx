@@ -31,7 +31,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
 
-  consolde.log("server url : ",server)
+  console.log("server url : ",server)
 
   useEffect(() => {
     axios
