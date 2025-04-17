@@ -6,8 +6,7 @@
 
 ## 🚀 Live Demo
 
-Frontend: [https://messagesync-client.netlify.app](https://messagesync-client.netlify.app)  
-Backend: [https://messagesync-server.onrender.com](https://messagesync-server.onrender.com)
+Frontend: [http://messagesync.netlify.app](http://messagesync.netlify.app) 
 
 ---
 
